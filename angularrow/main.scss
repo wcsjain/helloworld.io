@@ -1,0 +1,103 @@
+.page_editor_panel {
+    position: fixed;
+
+    float: left;
+
+    z-index: 999;
+
+    .edit_panel {
+        *{
+            box-sizing: border-box;
+        }
+        width: 130px;
+        height: 100vh;
+
+        background-color: rgb(236, 236, 236);
+
+        float: left;
+
+        .panel_hedline {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: auto;
+            width: 100%;
+
+            padding: 36px 10px 10px 10px;
+
+            color: #444444;
+            
+            border-bottom: 1px solid #ccc;
+
+            background: #ffffff url("/css/images/WebEditor.png") no-repeat top 5px center / 30px 30px;
+
+            opacity: 1;
+
+            font-size: 13px;
+            font-family: Raleway;
+
+        }
+        .common_module {
+            .module_title {
+                @extend .panel_hedline;
+
+                position: relative;
+
+                background-image: none;
+
+                font-size: 11px;
+
+                padding: 10px;
+                .common_meg {
+
+                    display: flex;
+                    align-items:center;
+                    justify-content: center;
+                    position: absolute;
+
+                    opacity: 0;
+                    z-index: -999;
+                    
+                    background-color: rgba(255,255,255,0.5);
+
+                    border: 1px solid #ccc;
+
+                    border-right: none;
+                    border-left: none;
+
+                    left: 130px;
+
+                    font-size: 13px;
+                    font-weight: 700;
+
+                    top: -1px;
+
+                    height: 37px;
+                    width: 190px;
+                    .direction_icon {
+
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        width: 25px;
+                        height: 25px;
+
+                        border-radius: 50%;
+
+                        margin-left: 8px;
+
+                        background-color: #eee;
+
+                        border: 1px solid #999;
+                        .fa {
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
